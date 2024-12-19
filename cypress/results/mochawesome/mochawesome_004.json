@@ -1,0 +1,107 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-12-19T04:00:36.670Z",
+    "end": "2024-12-19T04:00:43.178Z",
+    "duration": 6508,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b41230ac-5ae0-4cb9-b006-55cd8ca64770",
+      "title": "",
+      "fullFile": "cypress/e2e/text-fields.js",
+      "file": "cypress/e2e/text-fields.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "e8775047-fd8a-4da3-ad16-4817a8bf7103",
+          "title": "Testing Check Box",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Text Fields",
+              "fullTitle": "Testing Check Box Text Fields",
+              "timedOut": null,
+              "duration": 6394,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit(\"/text-box\");\ncy.insertData('Filip Aleksoski', 'filip.aleksoski@gmail.com', 'Volgogradska 1/15', 'Str. Pitu Guli N.50');\ncy.get(\".border\").should(\"include.text\", \"Name:Filip Aleksoski\");\ncy.get(\".border\").should(\"include.text\", \"Email:filip.aleksoski@gmail.com\");\ncy.get(\".border\").should(\"include.text\", \"Volgogradska 1/15\");\ncy.get(\".border\").should(\"include.text\", \"Str. Pitu Guli N.50\");",
+              "err": {},
+              "uuid": "22f161a1-60a5-48bb-b77d-d74f09c10543",
+              "parentUUID": "e8775047-fd8a-4da3-ad16-4817a8bf7103",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "22f161a1-60a5-48bb-b77d-d74f09c10543"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 6394,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
